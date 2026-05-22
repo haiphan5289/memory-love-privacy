@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chính sách bảo mật — AI Laundry</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f7faff;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 0 16px 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #60a5fa);
+      color: white;
+      text-align: center;
+      padding: 48px 24px 36px;
+      margin: 0 -16px 40px;
+    }
+
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { margin-top: 8px; font-size: 0.9rem; opacity: 0.85; }
+
+    .container { max-width: 720px; margin: 0 auto; }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #2563eb;
+      margin: 36px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #dbeafe;
+    }
+
+    p  { margin-bottom: 12px; font-size: 0.95rem; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+
+    a  { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #2563eb;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AI Laundry</h1>
+  <p>Chính sách bảo mật &nbsp;·&nbsp; Cập nhật lần cuối: 22 tháng 5, 2026</p>
+</header>
+
+<div class="container">
+
+  <p>
+    Chào mừng bạn đến với <strong>AI Laundry</strong>. Chính sách bảo mật này giải thích cách
+    Hai Phan ("<strong>chúng tôi</strong>") thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn
+    khi sử dụng ứng dụng AI Laundry trên iOS. Khi sử dụng ứng dụng, bạn đồng ý với các
+    nội dung được mô tả trong chính sách này.
+  </p>
+
+  <!-- ─── 1. Thông tin chúng tôi thu thập ─── -->
+  <h2>1. Thông tin chúng tôi thu thập</h2>
+
+  <p><span class="badge">Tài khoản</span></p>
+  <ul>
+    <li>Địa chỉ email và mật khẩu (khi đăng ký bằng email)</li>
+    <li>Họ và tên (tùy chọn — khi tạo tài khoản)</li>
+    <li>Ảnh đại diện (tùy chọn — khi bạn tự upload)</li>
+    <li>Apple ID và Google ID (khi đăng nhập bằng Apple / Google)</li>
+  </ul>
+
+  <p><span class="badge">Dữ liệu vận hành tiệm giặt</span></p>
+  <ul>
+    <li>Thông tin khách hàng: tên, số điện thoại</li>
+    <li>Giao dịch giặt: trạng thái đơn, ngày nhận, ngày trả, số tiền, danh mục dịch vụ</li>
+    <li>Dữ liệu kho: đơn chưa trả, đơn quá hạn</li>
+  </ul>
+
+  <p><span class="badge">AI Stain Detect</span></p>
+  <ul>
+    <li>Ảnh vết bẩn bạn chụp hoặc chọn từ thư viện — dùng để phân tích bằng GPT-4o Vision</li>
+    <li>Ảnh chỉ được gửi đến OpenAI để xử lý, không lưu trữ lâu dài trên server của chúng tôi</li>
+  </ul>
+
+  <p><span class="badge">Thiết bị &amp; Sử dụng</span></p>
+  <ul>
+    <li>Loại thiết bị, phiên bản hệ điều hành, định danh thiết bị duy nhất</li>
+    <li>Sự kiện sử dụng ứng dụng (màn hình đã xem, tính năng đã dùng) qua Firebase Analytics</li>
+    <li>Báo cáo crash và dữ liệu chẩn đoán qua Firebase Crashlytics</li>
+    <li>Token thông báo đẩy qua Firebase Cloud Messaging</li>
+  </ul>
+
+  <!-- ─── 2. Mục đích sử dụng ─── -->
+  <h2>2. Mục đích sử dụng thông tin</h2>
+  <ul>
+    <li>Tạo và duy trì tài khoản của bạn</li>
+    <li>Quản lý dữ liệu khách hàng, giao dịch và kho hàng của tiệm</li>
+    <li>Phân tích ảnh vết bẩn bằng AI để hỗ trợ quyết định giặt</li>
+    <li>Gửi thông báo đẩy liên quan đến trạng thái đơn hàng</li>
+    <li>Chẩn đoán lỗi và cải thiện độ ổn định ứng dụng</li>
+    <li>Phân tích mẫu sử dụng tổng hợp để cải thiện tính năng</li>
+    <li>Tuân thủ các nghĩa vụ pháp lý</li>
+  </ul>
+
+  <!-- ─── 3. Lưu trữ & Bảo mật ─── -->
+  <h2>3. Lưu trữ &amp; Bảo mật</h2>
+  <p>
+    Dữ liệu của bạn được lưu trên hạ tầng <strong>Google Firebase</strong> (Firestore, Storage,
+    Authentication) trong các trung tâm dữ liệu bảo mật của Google. Chúng tôi sử dụng mã hóa
+    tiêu chuẩn ngành trong quá trình truyền dữ liệu (HTTPS/TLS) và khi lưu trữ.
+  </p>
+  <p>
+    Dữ liệu tiệm của bạn chỉ truy cập được bởi tài khoản đã xác thực của chính bạn.
+    Token xác thực được lưu an toàn trong iOS Keychain trên thiết bị.
+  </p>
+
+  <!-- ─── 4. Dịch vụ bên thứ ba ─── -->
+  <h2>4. Dịch vụ bên thứ ba</h2>
+  <p>Chúng tôi sử dụng các dịch vụ bên thứ ba sau. Mỗi dịch vụ có chính sách bảo mật riêng:</p>
+  <ul>
+    <li>
+      <strong>Firebase (Google LLC)</strong> — Authentication, Firestore, Storage,
+      Analytics, Crashlytics, Remote Config, Cloud Messaging
+      &nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">Chính sách bảo mật</a>
+    </li>
+    <li>
+      <strong>OpenAI</strong> — GPT-4o Vision (phân tích ảnh vết bẩn)
+      &nbsp;<a href="https://openai.com/privacy" target="_blank">Chính sách bảo mật</a>
+    </li>
+    <li>
+      <strong>Sign in with Apple (Apple Inc.)</strong> — Xác thực liên kết
+      &nbsp;<a href="https://www.apple.com/legal/privacy/" target="_blank">Chính sách bảo mật</a>
+    </li>
+    <li>
+      <strong>Google Sign-In (Google LLC)</strong> — Xác thực liên kết
+      &nbsp;<a href="https://policies.google.com/privacy" target="_blank">Chính sách bảo mật</a>
+    </li>
+  </ul>
+
+  <!-- ─── 5. Chia sẻ dữ liệu ─── -->
+  <h2>5. Chia sẻ dữ liệu</h2>
+  <p>
+    Chúng tôi <strong>không</strong> bán, cho thuê hoặc chia sẻ thông tin cá nhân của bạn
+    với bên thứ ba cho mục đích tiếp thị. Dữ liệu tiệm giặt của bạn là riêng tư và chỉ
+    hiển thị với tài khoản của bạn. Chúng tôi có thể tiết lộ dữ liệu nếu pháp luật yêu cầu
+    hoặc để bảo vệ quyền và sự an toàn của người dùng.
+  </p>
+
+  <!-- ─── 6. Quyền truy cập thiết bị ─── -->
+  <h2>6. Quyền truy cập thiết bị</h2>
+  <p>
+    <strong>Camera &amp; Thư viện ảnh</strong> — AI Laundry yêu cầu quyền truy cập camera
+    và thư viện ảnh chỉ để bạn chụp hoặc chọn ảnh vết bẩn cho tính năng AI Stain Detect.
+    Chúng tôi không truy cập camera ở chế độ nền hoặc cho bất kỳ mục đích nào khác.
+  </p>
+
+  <!-- ─── 7. Lưu trữ & Xóa dữ liệu ─── -->
+  <h2>7. Lưu trữ &amp; Xóa tài khoản</h2>
+  <p>
+    Dữ liệu của bạn được lưu trữ trong suốt thời gian tài khoản còn hoạt động. Bạn có thể
+    xóa tài khoản bất cứ lúc nào từ màn hình Hồ sơ trong ứng dụng. Sau khi xóa, toàn bộ
+    dữ liệu tài khoản, khách hàng và giao dịch sẽ bị xóa vĩnh viễn khỏi server của chúng tôi
+    trong vòng 30 ngày.
+  </p>
+
+  <!-- ─── 8. Quyền riêng tư trẻ em ─── -->
+  <h2>8. Quyền riêng tư trẻ em</h2>
+  <p>
+    AI Laundry không hướng đến trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin
+    cá nhân từ trẻ em dưới 13 tuổi. Nếu bạn cho rằng trẻ em đã cung cấp thông tin cho chúng tôi,
+    vui lòng liên hệ và chúng tôi sẽ xóa ngay.
+  </p>
+
+  <!-- ─── 9. Quyền của bạn ─── -->
+  <h2>9. Quyền của bạn</h2>
+  <p>Bạn có quyền:</p>
+  <ul>
+    <li>Truy cập thông tin cá nhân chúng tôi đang lưu trữ về bạn</li>
+    <li>Yêu cầu chỉnh sửa dữ liệu không chính xác</li>
+    <li>Yêu cầu xóa dữ liệu (xem Mục 7)</li>
+    <li>Phản đối hoặc hạn chế một số hoạt động xử lý nhất định</li>
+    <li>Di chuyển dữ liệu khi khả thi về mặt kỹ thuật</li>
+  </ul>
+  <p>Để thực hiện các quyền này, vui lòng liên hệ qua email bên dưới.</p>
+
+  <!-- ─── 10. Thay đổi chính sách ─── -->
+  <h2>10. Thay đổi chính sách này</h2>
+  <p>
+    Chúng tôi có thể cập nhật Chính sách bảo mật này theo thời gian. Chúng tôi sẽ thông báo
+    về những thay đổi quan trọng qua ứng dụng hoặc bằng cách cập nhật ngày "Cập nhật lần cuối"
+    ở đầu trang này. Tiếp tục sử dụng ứng dụng sau khi có thay đổi đồng nghĩa với việc chấp nhận
+    chính sách đã cập nhật.
+  </p>
+
+  <!-- ─── 11. Liên hệ ─── -->
+  <h2>11. Liên hệ</h2>
+  <p>
+    Nếu bạn có câu hỏi hoặc thắc mắc về Chính sách bảo mật này, vui lòng liên hệ:<br />
+    <strong>Hai Phan</strong><br />
+    <a href="mailto:haiphan5289@gmail.com">haiphan5289@gmail.com</a>
+  </p>
+
+</div>
+
+<footer>
+  &copy; 2026 Hai Phan &nbsp;·&nbsp; AI Laundry
+</footer>
+
+</body>
+</html>
