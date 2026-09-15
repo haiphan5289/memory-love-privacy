@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support — SnapMind</title>
+  <title>Privacy Policy & Support — SnapMind</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -44,6 +44,18 @@
     a  { color: #6c63ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
+    .badge {
+      display: inline-block;
+      background: #eeecff;
+      color: #6c63ff;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
     .contact-card {
       background: white;
       border: 1px solid #eeecff;
@@ -66,17 +78,173 @@
 
 <header>
   <h1>SnapMind</h1>
-  <p>Support &amp; Help Center</p>
+  <p>Privacy Policy &amp; Support &nbsp;·&nbsp; Last updated: September 15, 2026</p>
 </header>
 
 <div class="container">
 
   <p>
-    Need help with SnapMind? You're in the right place. Below are answers to common
-    questions — if you don't find what you're looking for, reach out to us directly.
+    Welcome to <strong>SnapMind</strong>. This Privacy Policy explains how Hai Phan
+    ("<strong>we</strong>", "<strong>us</strong>") collects, uses, and protects information
+    when you use the SnapMind app on iOS. By using the app, you agree to the practices
+    described in this policy.
   </p>
 
-  <h2>Contact Us</h2>
+  <!-- ─── 1. Information We Collect ─── -->
+  <h2>1. Information We Collect</h2>
+
+  <p><span class="badge">Account</span></p>
+  <p>
+    None. SnapMind does not require sign-up or login — there is no account, email, or
+    password collected at any point.
+  </p>
+
+  <p><span class="badge">Screenshot Data</span></p>
+  <ul>
+    <li>Images you import from your Photos library, capture with the in-app camera, share
+      to SnapMind from another app (Share Extension), or that SnapMind detects automatically
+      in your Screenshots album (you confirm each import)</li>
+    <li>Imported images are copied into the app's own local storage on your device — they
+      are never uploaded to a server we operate</li>
+  </ul>
+
+  <p><span class="badge">AI Analysis</span></p>
+  <ul>
+    <li>When you import a screenshot, the image is sent to <strong>OpenAI's Vision API</strong>
+      (model family GPT-4.1) to extract text (OCR), generate a title/summary, and classify
+      it into a category (e.g. Receipt, Booking, Task)</li>
+    <li>Analysis only happens for screenshots you explicitly import — nothing is analyzed
+      in the background</li>
+    <li>Images and extracted text are sent to OpenAI solely to process that request; we do
+      not maintain our own server-side copy of what is sent</li>
+  </ul>
+
+  <p><span class="badge">Device &amp; Usage</span></p>
+  <ul>
+    <li>Anonymous app configuration values (e.g. your monthly free AI-analysis limit) are
+      fetched from <strong>Firebase Remote Config</strong> — no screenshot content or
+      personal data is sent as part of this</li>
+    <li>A local counter of how many AI analyses / AI Chat messages you've used this
+      month/day, stored securely in iOS Keychain on your device (via
+      <code>flutter_secure_storage</code>) — this counter is never transmitted anywhere</li>
+  </ul>
+
+  <!-- ─── 2. How We Use Information ─── -->
+  <h2>2. How We Use Information</h2>
+  <ul>
+    <li>Extract text, generate a title/summary, and classify screenshots you import</li>
+    <li>Enforce free-plan usage limits (monthly AI analyses, daily AI Chat messages)</li>
+    <li>Let you search, filter, and browse your own screenshots by category, date, or
+      keyword — entirely on-device</li>
+    <li>Optionally add detected events, flights, or bookings to your device's calendar
+      (Settings toggle "Auto-add to Calendar", on by default — you can turn it off anytime)</li>
+    <li>Show local reminders you opted into, such as the Daily Digest and Weekly Summary —
+      these are generated entirely on-device from your own library, with no data sent
+      anywhere to produce them</li>
+  </ul>
+
+  <!-- ─── 3. Storage & Security ─── -->
+  <h2>3. Storage &amp; Security</h2>
+  <p>
+    SnapMind has no login and no cloud sync — your screenshots, extracted text, and AI
+    results are stored <strong>only in local storage on your device</strong>. We do not
+    operate a backend database that holds your screenshots or their contents.
+  </p>
+  <p>
+    Data sent to OpenAI for analysis travels over an encrypted connection (HTTPS/TLS).
+    Handling of that data once received is governed by OpenAI's own privacy policy
+    (linked below).
+  </p>
+
+  <!-- ─── 4. Third-Party Services ─── -->
+  <h2>4. Third-Party Services</h2>
+  <p>We use the following third-party services. Each has its own privacy policy:</p>
+  <ul>
+    <li>
+      <strong>OpenAI</strong> — GPT-4.1 Vision (screenshot OCR, summarization, and
+      classification)
+      &nbsp;<a href="https://openai.com/privacy" target="_blank">Privacy Policy</a>
+    </li>
+    <li>
+      <strong>Firebase Remote Config (Google LLC)</strong> — remote app configuration only
+      (e.g. usage limits); no screenshot content is sent
+      &nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>
+    </li>
+  </ul>
+  <p>
+    SnapMind does not include any advertising or analytics/tracking SDK.
+  </p>
+
+  <!-- ─── 5. Data Sharing ─── -->
+  <h2>5. Data Sharing</h2>
+  <p>
+    We do <strong>not</strong> sell, rent, or share your personal information with third
+    parties for marketing purposes. Your screenshots and their contents stay on your
+    device unless you explicitly share them (e.g. using the Share button, or Weekly
+    Summary's share card). We may disclose information if required by law or to protect
+    the rights and safety of users.
+  </p>
+
+  <!-- ─── 6. Device Permissions ─── -->
+  <h2>6. Device Permissions</h2>
+  <p>
+    <strong>Photos</strong> — lets SnapMind import screenshots you pick, and detect new
+    screenshots in your Screenshots album (you confirm each import before it's added).
+  </p>
+  <p>
+    <strong>Camera</strong> — used only when you choose "Take Photo" to capture a new
+    image directly into SnapMind.
+  </p>
+  <p>
+    <strong>Calendar</strong> — optional (Settings toggle, on by default). When enabled,
+    SnapMind writes detected events, flights, or lodging bookings to a calendar on your
+    device. You can deny or revoke this anytime in iOS Settings or the in-app toggle.
+  </p>
+  <p>
+    <strong>Notifications</strong> — used for the opt-in Daily Digest and Weekly Summary
+    local reminders, generated entirely on-device.
+  </p>
+  <p>
+    You can deny or revoke any of these permissions at any time in iOS Settings.
+  </p>
+
+  <!-- ─── 7. Data Retention & Deletion ─── -->
+  <h2>7. Data Retention &amp; Deletion</h2>
+  <p>
+    Because SnapMind stores everything locally and has no account, your data stays only
+    as long as you keep it in the app. You can delete an individual screenshot (swipe to
+    delete) or remove everything at once via <em>Settings → Clear all screenshots</em>.
+    Deleting a screenshot from SnapMind does not delete it from your device's Photos
+    library. Uninstalling the app removes all of SnapMind's local data.
+  </p>
+
+  <!-- ─── 8. Children's Privacy ─── -->
+  <h2>8. Children's Privacy</h2>
+  <p>
+    SnapMind is not directed at children under 13, and we do not knowingly collect
+    personal information from children under 13. If you believe a child has provided
+    information through the app, please contact us and we will address it promptly.
+  </p>
+
+  <!-- ─── 9. Your Rights ─── -->
+  <h2>9. Your Rights</h2>
+  <p>
+    Since SnapMind does not hold your screenshots or personal data on a server, you can
+    already access, edit, or delete everything directly in the app (see Section 7). If
+    you have any question about data sent to OpenAI for analysis, or about this policy,
+    contact us using the details below.
+  </p>
+
+  <!-- ─── 10. Changes to This Policy ─── -->
+  <h2>10. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. We'll reflect significant
+    changes by updating the "Last updated" date at the top of this page. Continuing to
+    use the app after a change means you accept the updated policy.
+  </p>
+
+  <!-- ─── 11. Contact Us ─── -->
+  <h2>11. Contact Us</h2>
   <div class="contact-card">
     <strong>Hai Phan</strong>
     <a href="mailto:haiphan5289@gmail.com">haiphan5289@gmail.com</a>
@@ -90,7 +258,7 @@
     locally on your device.</p>
 
   <p><strong>How does the AI analyze my screenshots?</strong></p>
-  <p>When you import a screenshot, SnapMind sends the image to an AI vision service
+  <p>When you import a screenshot, SnapMind sends the image to OpenAI's Vision API
     to extract text, generate a title/summary, and classify it into a category.
     Analysis only happens for screenshots you explicitly import.</p>
 
