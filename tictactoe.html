@@ -80,7 +80,7 @@
 
 <header>
   <h1>TicTacToe</h1>
-  <p>Privacy Policy &nbsp;·&nbsp; Last updated: May 5, 2026</p>
+  <p>Privacy Policy &nbsp;·&nbsp; Last updated: November 1, 2026</p>
 </header>
 
 <div class="container">
@@ -99,6 +99,7 @@
   <ul>
     <li>Email address and password (when you sign up with email)</li>
     <li>Full name and Apple-issued user identifier (when you use Sign in with Apple)</li>
+    <li>Display name you choose, shown to other players in rooms and chat</li>
   </ul>
 
   <p><span class="badge">Device</span></p>
@@ -106,13 +107,19 @@
     <li>A randomly generated unique identifier (UUID) stored locally on your device to identify you within active game sessions</li>
   </ul>
 
+  <p><span class="badge">Usage &amp; Analytics</span></p>
+  <ul>
+    <li>We use Firebase Analytics to understand which screens and game modes are used — screen views, game mode selected, game finished (win/loss/draw), room created/joined, sign-in method, and similar in-app actions</li>
+    <li>These events are tied to your Firebase user ID, not to your name or email, and contain no free-text content (chat messages are never sent as analytics data)</li>
+  </ul>
+
   <!-- ─── 2. Information We Do NOT Collect ─── -->
   <h2>2. Information We Do NOT Collect</h2>
   <ul>
     <li>We do not collect location data</li>
-    <li>We do not collect device advertising identifiers (IDFA, IDFV)</li>
+    <li>We do not collect device advertising identifiers (IDFA, IDFV), and we do not use your data for advertising or cross-app tracking</li>
     <li>We do not collect health, financial, or sensitive personal data</li>
-    <li>We do not use analytics or crash reporting SDKs</li>
+    <li>We do not use crash reporting SDKs</li>
     <li><strong>Game session data</strong> (board state, moves, win/loss results) is stored temporarily in Firebase during an active game and is <strong>permanently deleted</strong> when the game ends or a player leaves</li>
   </ul>
 
@@ -122,8 +129,9 @@
     <li>To create and maintain your account</li>
     <li>To identify you within real-time game sessions</li>
     <li>To sync game state between two players in real time</li>
+    <li>To understand app usage and improve features, via Firebase Analytics (see Section 1)</li>
   </ul>
-  <p>We do not use your information for advertising, marketing, or profiling.</p>
+  <p>We do not sell your information or use it for third-party advertising.</p>
 
   <!-- ─── 4. Data Storage & Security ─── -->
   <h2>4. Data Storage &amp; Security</h2>
@@ -142,7 +150,7 @@
   <p>We use the following third-party services. Each has its own privacy policy:</p>
   <ul>
     <li>
-      <strong>Firebase (Google LLC)</strong> — Authentication, Realtime Database
+      <strong>Firebase (Google LLC)</strong> — Authentication, Realtime Database, Analytics
       &nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>
     </li>
     <li>
@@ -151,16 +159,25 @@
     </li>
   </ul>
 
-  <!-- ─── 6. Data Sharing ─── -->
-  <h2>6. Data Sharing</h2>
+  <!-- ─── 6. In-Game Chat ─── -->
+  <h2>6. In-Game Chat</h2>
+  <p>
+    Some online games (such as Ma Sói) include a text chat between players in the same room.
+    Messages are stored in Firebase only for the duration of the room and are visible to players
+    in that room. You can report a message or block a player from inside the chat — see our
+    <a href="tictactoe-terms.html">Terms of Use</a> for details.
+  </p>
+
+  <!-- ─── 7. Data Sharing ─── -->
+  <h2>7. Data Sharing</h2>
   <p>
     We do <strong>not</strong> sell, rent, or share your personal information with third parties
     for marketing purposes. We may disclose data if required by law or to protect
     the rights and safety of our users.
   </p>
 
-  <!-- ─── 7. Data Retention & Deletion ─── -->
-  <h2>7. Data Retention &amp; Account Deletion</h2>
+  <!-- ─── 8. Data Retention & Deletion ─── -->
+  <h2>8. Data Retention &amp; Account Deletion</h2>
   <p>
     Your account data is retained for as long as your account is active. You can request
     deletion of your account and all associated data at any time by contacting us at the
@@ -170,35 +187,35 @@
     Game session data is deleted automatically and immediately when a game session ends.
   </p>
 
-  <!-- ─── 8. Children's Privacy ─── -->
-  <h2>8. Children's Privacy</h2>
+  <!-- ─── 9. Children's Privacy ─── -->
+  <h2>9. Children's Privacy</h2>
   <p>
     TicTacToe is not directed at children under the age of 13. We do not knowingly collect
     personal information from children under 13. If you believe a child has provided us with
     personal information, please contact us and we will delete it promptly.
   </p>
 
-  <!-- ─── 9. Your Rights ─── -->
-  <h2>9. Your Rights</h2>
+  <!-- ─── 10. Your Rights ─── -->
+  <h2>10. Your Rights</h2>
   <p>You have the right to:</p>
   <ul>
     <li>Access the personal information we hold about you</li>
     <li>Request correction of inaccurate data</li>
-    <li>Request deletion of your data (see Section 7)</li>
+    <li>Request deletion of your data (see Section 8)</li>
     <li>Object to or restrict certain processing activities</li>
   </ul>
   <p>To exercise any of these rights, contact us at the email address below.</p>
 
-  <!-- ─── 10. Changes ─── -->
-  <h2>10. Changes to This Policy</h2>
+  <!-- ─── 11. Changes ─── -->
+  <h2>11. Changes to This Policy</h2>
   <p>
     We may update this Privacy Policy from time to time. We will notify you of significant
     changes by updating the "Last updated" date at the top of this page.
     Continued use of the app after changes constitutes acceptance of the updated policy.
   </p>
 
-  <!-- ─── 11. Contact ─── -->
-  <h2>11. Contact Us</h2>
+  <!-- ─── 12. Contact ─── -->
+  <h2>12. Contact Us</h2>
   <p>
     If you have any questions or concerns about this Privacy Policy, please contact:<br />
     <strong>Hai Phan</strong><br />
@@ -208,7 +225,7 @@
 </div>
 
 <footer>
-  &copy; 2026 Hai Phan &nbsp;·&nbsp; TicTacToe
+  &copy; 2026 Hai Phan &nbsp;·&nbsp; TicTacToe &nbsp;·&nbsp; <a href="tictactoe-terms.html">Terms of Use</a>
 </footer>
 
 </body>
