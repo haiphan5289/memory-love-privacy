@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy & Support — AI Product Studio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #faf9ff;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 0 16px 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #15141a, #6d5ae6);
+      color: white;
+      text-align: center;
+      padding: 48px 24px 36px;
+      margin: 0 -16px 40px;
+    }
+
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { margin-top: 8px; font-size: 0.9rem; opacity: 0.9; }
+
+    .container { max-width: 720px; margin: 0 auto; }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #6d5ae6;
+      margin: 36px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #eeecff;
+    }
+
+    p  { margin-bottom: 12px; font-size: 0.95rem; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+
+    a  { color: #6d5ae6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .badge {
+      display: inline-block;
+      background: #eeecff;
+      color: #6d5ae6;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid #eeecff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 12px 0 24px;
+    }
+
+    .contact-card strong { display: block; margin-bottom: 4px; }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AI Product Studio</h1>
+  <p>Privacy Policy &amp; Support &nbsp;·&nbsp; Last updated: November 23, 2026</p>
+</header>
+
+<div class="container">
+
+  <p>
+    Welcome to <strong>AI Product Studio</strong>. This Privacy Policy explains how Hai Phan
+    ("<strong>we</strong>", "<strong>us</strong>") collects, uses, and protects information
+    when you use the AI Product Studio app on iOS. By using the app, you agree to the
+    practices described in this policy.
+  </p>
+
+  <!-- ─── 1. Information We Collect ─── -->
+  <h2>1. Information We Collect</h2>
+
+  <p><span class="badge">Account</span></p>
+  <ul>
+    <li>Email address, display name, and profile photo (if you sign in with Apple, Google, or email/password)</li>
+    <li>A unique account ID and basic account status (e.g. active, subscription state)</li>
+  </ul>
+
+  <p><span class="badge">Product Photos &amp; Generated Images</span></p>
+  <ul>
+    <li>Photos you upload of your products, and the images our AI pipeline produces from
+      them (background-removed cutout, AI-generated background, final composited result)</li>
+    <li>These are stored privately in our cloud storage, in a folder scoped to your account
+      only — never in a public bucket</li>
+  </ul>
+
+  <p><span class="badge">AI Processing</span></p>
+  <ul>
+    <li>When you process a product photo, the image is sent to <strong>fal.ai</strong>
+      (third-party AI infrastructure) to remove the background and, when you generate a
+      new scene, to generate the new background image</li>
+    <li>Your product's actual pixels are never re-generated or redrawn by AI — only the
+      background is AI-generated; the product itself is locked and composited back in
+      deterministically</li>
+    <li>Scene/style choices you make are turned into a text prompt, which is also sent to
+      the AI provider to generate the background</li>
+    <li>Uploaded images, prompts, and generated outputs automatically pass through
+      moderation checks before being shown to you; content that fails this check is blocked
+      and not shown, and any credit spent on it is refunded in full</li>
+  </ul>
+
+  <p><span class="badge">Credit &amp; Subscription</span></p>
+  <ul>
+    <li>Your credit balance and a history of how credits were earned/spent</li>
+    <li>Subscription status and plan, verified through Apple's StoreKit — we never see or
+      store your payment card details; Apple handles billing directly</li>
+  </ul>
+
+  <p><span class="badge">Device &amp; Usage</span></p>
+  <ul>
+    <li>Basic app usage analytics (e.g. which screens are used, whether a generation
+      succeeded) via Firebase Analytics, to understand how the app is used and improve it</li>
+    <li>Device/notification token, if you enable notifications, to let us notify you when a
+      generation job finishes</li>
+  </ul>
+
+  <!-- ─── 2. How We Use Information ─── -->
+  <h2>2. How We Use Information</h2>
+  <ul>
+    <li>Create and manage your account, credit balance, and subscription</li>
+    <li>Process your product photos through the AI pipeline (background removal, background
+      generation, moderation, compositing) and show you the result</li>
+    <li>Save your products, Brand Studio presets, and generation history so you can reuse
+      and manage them</li>
+    <li>Detect and block content that violates our content guidelines before it reaches you</li>
+    <li>Understand app usage and fix problems</li>
+  </ul>
+
+  <!-- ─── 3. Storage & Security ─── -->
+  <h2>3. Storage &amp; Security</h2>
+  <p>
+    Your account data, product photos, and generated images are stored on Google
+    Firebase (Firestore database and Cloud Storage), in a private location scoped to your
+    account only. Access rules enforce that only you can read or write your own data — we
+    do not expose it publicly, and we do not log the full content of your prompts or raw
+    image bytes beyond what's needed to run moderation checks.
+  </p>
+
+  <!-- ─── 4. Third-Party Services ─── -->
+  <h2>4. Third-Party Services</h2>
+  <p>We use the following third-party services. Each has its own privacy policy:</p>
+  <ul>
+    <li>
+      <strong>fal.ai</strong> — AI background removal and AI background generation
+      &nbsp;<a href="https://fal.ai/privacy" target="_blank">Privacy Policy</a>
+    </li>
+    <li>
+      <strong>Google Firebase</strong> — authentication, database, storage, cloud functions,
+      and app analytics
+      &nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>
+    </li>
+    <li>
+      <strong>Apple (StoreKit)</strong> — subscription purchase and billing
+      &nbsp;<a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy</a>
+    </li>
+  </ul>
+
+  <!-- ─── 5. Data Sharing ─── -->
+  <h2>5. Data Sharing</h2>
+  <p>
+    We do <strong>not</strong> sell, rent, or share your personal information with third
+    parties for marketing purposes. We share data only with the service providers listed
+    in Section 4, solely to operate the app's features (processing your photos, running
+    your account, and billing). We may disclose information if required by law or to
+    protect the rights and safety of users.
+  </p>
+
+  <!-- ─── 6. Device Permissions ─── -->
+  <h2>6. Device Permissions</h2>
+  <p>
+    <strong>Photo Library</strong> — lets you pick a product photo to upload. Requested
+    only when you first try to upload a photo, not at app launch.
+  </p>
+  <p>
+    <strong>Camera</strong> — used only when you choose to take a new photo of your product
+    directly in the app.
+  </p>
+  <p>
+    <strong>Notifications</strong> — optional, used to let you know when an AI generation
+    job finishes.
+  </p>
+  <p>
+    You can deny or revoke any of these permissions at any time in iOS Settings.
+  </p>
+
+  <!-- ─── 7. Data Retention & Deletion ─── -->
+  <h2>7. Data Retention &amp; Deletion</h2>
+  <p>
+    You can delete your account at any time from <em>Profile → Account &amp; Security →
+    Delete Account</em>. This permanently deletes your profile, product photos, generated
+    images, Brand Studio presets, generation history, and credit/purchase history. This
+    action cannot be undone.
+  </p>
+  <p>
+    <strong>Important:</strong> deleting your account does not cancel an active Apple
+    subscription. If you have an active subscription, cancel it separately in your Apple
+    ID subscription settings to stop future billing.
+  </p>
+  <p>
+    You can also request a copy of your data from <em>Profile → Export My Data</em>.
+  </p>
+
+  <!-- ─── 8. Children's Privacy ─── -->
+  <h2>8. Children's Privacy</h2>
+  <p>
+    AI Product Studio is not directed at children under 13, and we do not knowingly
+    collect personal information from children under 13. If you believe a child has
+    provided information through the app, please contact us and we will address it
+    promptly.
+  </p>
+
+  <!-- ─── 9. Your Rights ─── -->
+  <h2>9. Your Rights</h2>
+  <p>
+    You can access and manage most of your data directly in the app. You can request a
+    full export of your data, or delete your account and all associated data, from the
+    Profile tab (see Section 7). If you have any question about this policy or how your
+    data is handled, contact us using the details below.
+  </p>
+
+  <!-- ─── 10. Changes to This Policy ─── -->
+  <h2>10. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. We'll reflect significant
+    changes by updating the "Last updated" date at the top of this page. Continuing to
+    use the app after a change means you accept the updated policy.
+  </p>
+
+  <!-- ─── 11. Contact Us ─── -->
+  <h2>11. Contact Us</h2>
+  <div class="contact-card">
+    <strong>Hai Phan</strong>
+    <a href="mailto:haiphan5289@gmail.com">haiphan5289@gmail.com</a>
+  </div>
+  <p>We typically respond within 1–2 business days.</p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <p><strong>Does AI redraw or distort my actual product?</strong></p>
+  <p>No. Only the background/scene is AI-generated. Your product's real pixels are locked
+    ("Product Lock") and composited back in deterministically — the product itself is
+    never passed through a generative AI model.</p>
+
+  <p><strong>What happens to content that gets blocked by moderation?</strong></p>
+  <p>If an uploaded photo, prompt, or generated result fails our automated content checks,
+    it's blocked and not shown to you, and any credit you spent is fully refunded.</p>
+
+  <p><strong>How do I delete my data?</strong></p>
+  <p>Go to <em>Profile → Account &amp; Security → Delete Account</em> inside the app.
+    This permanently removes your account and all associated data and cannot be undone.
+    It does not cancel an active Apple subscription — cancel that separately in your
+    Apple ID settings.</p>
+
+  <p><strong>Why does AI Product Studio ask for Photos or Camera permission?</strong></p>
+  <p>Photos access lets you pick a product photo to upload; Camera access lets you take a
+    new one directly in the app. Both are requested only at the point you use that
+    feature, and you can deny or revoke either at any time in iOS Settings.</p>
+
+  <h2>Found a Bug or Have a Feature Request?</h2>
+  <p>
+    Email us at <a href="mailto:haiphan5289@gmail.com">haiphan5289@gmail.com</a> with
+    a description of what happened (and a screenshot, if possible) — we read every message.
+  </p>
+
+</div>
+
+<footer>
+  &copy; 2026 Hai Phan &nbsp;·&nbsp; AI Product Studio
+</footer>
+
+</body>
+</html>
