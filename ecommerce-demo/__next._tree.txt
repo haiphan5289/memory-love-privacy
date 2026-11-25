@@ -1,0 +1,3 @@
+:HL["/memory-love-privacy/ecommerce-demo/_next/static/chunks/3alvg0ya5ibbc.css","style"]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"rH8Xee_ii5oriNt_z82nQ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
